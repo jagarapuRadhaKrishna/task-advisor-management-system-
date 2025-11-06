@@ -1,0 +1,115 @@
+/* RecurringTasks.css */
+
+.recurring-tasks {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.recurring-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.recurring-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.recurring-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recurring-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.recurring-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recurring-info {
+  flex: 1;
+}
+
+.recurring-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.recurring-info p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.recurring-info strong {
+  color: #333;
+}
+
+.recurring-actions {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.recurring-actions .btn {
+  font-size: 12px;
+  padding: 8px 14px;
+}
+
+.btn-warning {
+  background: #ffc107;
+  color: #333;
+}
+
+.btn-warning:hover {
+  background: #e0a800;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recurring-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .recurring-actions {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .recurring-actions .btn {
+    flex: 1;
+  }
+
+  .recurring-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .recurring-header h2 {
+    width: 100%;
+  }
+
+  .recurring-header .btn {
+    width: 100%;
+  }
+}
